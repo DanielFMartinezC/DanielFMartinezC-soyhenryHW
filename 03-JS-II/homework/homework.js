@@ -55,7 +55,7 @@ function saludo(idioma) {
       return 'Ni Hao!';
       break;
     case 'ingles':
-      'Hello!';
+      'Hola!';
       break;
     default:
       return 'Hola!'
@@ -93,9 +93,9 @@ function esDiezOCinco(numero) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if(numero === 10 || numero === 5) {
-    return 'true'
+    return true
   } else {
-    return 'false'
+    return false
   }
 }
 
@@ -104,9 +104,9 @@ function estaEnRango(numero) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if(numero < 50 && numero > 20) {
-    return 'true'
+    return true
   } else {
-    return 'false'
+    return false
   }
 }
 
@@ -119,9 +119,9 @@ function esEntero(numero) {
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
   if(Math.floor(numero) === numero) {
-    return 'true'
+    return true
   } else {
-    return 'false'
+    return false
   }
 }
 

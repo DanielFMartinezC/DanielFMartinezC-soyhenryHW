@@ -28,7 +28,7 @@ const nuevoModulo = 21 % 5 === 1;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
-  return JSON.stringify(str);
+  return str;
 }
 
 function suma(x, y) {
@@ -144,7 +144,7 @@ function elevarAlCubo(num) {
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  Math.pow(num, exponent);
+  return Math.pow(num, exponent);
 }
 
 function redondearNumero(num) {
@@ -162,7 +162,7 @@ function redondearHaciaArriba(num) {
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  Math.random();
+  return Math.random();
 }
 
 function esPositivo(numero) {
@@ -197,7 +197,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return 'Hola' + nombre;
+  return 'Hola ' + nombre + '!';
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
@@ -236,16 +236,13 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  const vocal = ['a', 'e', 'i', 'o', 'u'];
+  const vocal = ['a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U'];
   if(letra.length !== 1) {
-    return 'Dato incorrecto'
-  }
-  for(let i = 0; i < vocal.length; i++) {
-    if(letra === vocal[i]) {
-      return 'Es vocal'
-    } else {
-      return 'Dato incorrecto'
-    }
+    return 'Dato incorrecto';
+  } else if (vocal.includes(letra)) {
+    return 'Es vocal';
+  }  else {
+    'Dato incorrecto'
   }
 }
 

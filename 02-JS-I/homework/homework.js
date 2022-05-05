@@ -242,7 +242,7 @@ function esVocal(letra){
   } else if (vocal.includes(letra)) {
     return 'Es vocal';
   }  else {
-    'Dato incorrecto'
+    return 'Dato incorrecto'
   }
 }
 

@@ -55,7 +55,7 @@ function saludo(idioma) {
       return 'Ni Hao!';
       break;
     case 'ingles':
-      'Hola!';
+      return 'Hola!';
       break;
     default:
       return 'Hola!'

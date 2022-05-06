@@ -149,11 +149,10 @@ function operadoresLogicos(num1, num2, num3) {
     return 'Error'
   } else if(num1 < 0 || num2 < 0 || num3 < 0) {
     return 'Hay negativos'
-  } else if(num1 > num2 && num1 > num3 && num1 > 0) {
+  } else if((num1 > num2 && num1 > num3) && num1 > 0) {
     'Número 1 es mayor y positivo'
   } else if(num3 > num1 && num3 > num2) {
-    num3++;
-    return num3
+    return num3 + 1
   } else {
     return false
   }
@@ -199,10 +198,11 @@ function tablaDelSeis(){
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  if(numero.length === 3) {
+  if(numero > 99) {
     return true
+  } else {
+    return false
   }
-  return false
 }
 
 function doWhile(numero) {
